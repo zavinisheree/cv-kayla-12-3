@@ -3,12 +3,16 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Lucu Pink - Kayla Larasati</title>
+  <title>CV Lucu Pink</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;family=Pacifico&amp;display=swap" rel="stylesheet">
+  <script src="/_sdk/element_sdk.js"></script>
   <style>
     body {
       box-sizing: border-box;
+    }
+    
+    * {
       font-family: 'Quicksand', sans-serif;
     }
     
@@ -107,107 +111,256 @@
  </head>
  <body class="h-full">
   <div id="cv-container" class="h-full overflow-auto" style="background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #fbcfe8 100%);">
-    <!-- Floating Decorations -->
-    <div class="fixed top-10 left-10 text-4xl float-animation opacity-60 pointer-events-none">🌸</div>
-    <div class="fixed top-20 right-20 text-3xl float-animation opacity-60 pointer-events-none" style="animation-delay: 0.5s;">✨</div>
-    <div class="fixed bottom-20 left-20 text-3xl float-animation opacity-60 pointer-events-none" style="animation-delay: 1s;">🎀</div>
-    <div class="fixed bottom-10 right-10 text-4xl float-animation opacity-60 pointer-events-none" style="animation-delay: 1.5s;">💖</div>
-
-    <div class="max-w-4xl mx-auto p-6 pb-20">
-      <!-- Header Card -->
-      <div class="bg-white rounded-3xl shadow-xl p-8 mb-6 card-hover relative overflow-hidden">
-        <div class="absolute -top-20 -right-20 w-60 h-60 blob opacity-20" style="background: linear-gradient(135deg, #f472b6, #ec4899);"></div>
-        <div class="flex flex-col md:flex-row items-center gap-6 relative z-10">
-          <div class="relative">
-            <div class="w-32 h-32 rounded-full blob bounce-animation flex items-center justify-center text-6xl" style="background: linear-gradient(135deg, #f9a8d4, #f472b6);">
-              👩‍🎓
-            </div>
-            <div class="absolute -bottom-2 -right-2 text-3xl wave-animation">👋</div>
-          </div>
-          <div class="text-center md:text-left flex-1">
-            <h1 id="nama-display" class="text-4xl font-bold mb-2" style="color: #be185d;">Kayla Larasati</h1>
-            <p id="ttl-display" class="text-sm mb-3 flex items-center justify-center md:justify-start gap-1" style="color: #be185d;">
-              <span>🎂</span> <span class="font-semibold">Bandung, 26 Agustus 2008</span>
-            </p>
-            <p id="tentang-display" class="leading-relaxed" style="color: #9d174d;">
-              Saya adalah fresh graduate yang baru menyelesaikan pendidikan dan memiliki semangat tinggi untuk belajar serta berkembang di dunia kerja. Saya memiliki motivasi kuat untuk mengembangkan keterampilan, terbuka terhadap tantangan baru, dan siap memberikan kontribusi terbaik 💖
-            </p>
-          </div>
-        </div>
+   <div class="fixed top-10 left-10 text-4xl float-animation opacity-60 pointer-events-none">🌸</div>
+   <div class="fixed top-20 right-20 text-3xl float-animation opacity-60 pointer-events-none" style="animation-delay: 0.5s;">✨</div>
+   <div class="fixed bottom-20 left-20 text-3xl float-animation opacity-60 pointer-events-none" style="animation-delay: 1s;">🎀</div>
+   <div class="fixed bottom-10 right-10 text-4xl float-animation opacity-60 pointer-events-none" style="animation-delay: 1.5s;">💖</div>
+   
+   <div class="max-w-4xl mx-auto p-6 pb-20">
+    <!-- Header Card -->
+    <div class="bg-white rounded-3xl shadow-xl p-8 mb-6 card-hover relative overflow-hidden">
+     <div class="absolute -top-20 -right-20 w-60 h-60 blob opacity-20" style="background: linear-gradient(135deg, #f472b6, #ec4899);"></div>
+     <div class="flex flex-col md:flex-row items-center gap-6 relative z-10">
+      <!-- Avatar -->
+      <div class="relative">
+       <div class="w-32 h-32 rounded-full blob bounce-animation flex items-center justify-center overflow-hidden" style="background: linear-gradient(135deg, #f9a8d4, #f472b6);">
+        <!-- FOTO KAMU DISINI -->
+        <img src="9005b15a-e9be-416c-b4ee-e01bc098f43c.jpg" alt="Foto Profil" class="w-full h-full object-cover">
+       </div>
+       <div class="absolute -bottom-2 -right-2 text-3xl wave-animation">👋</div>
       </div>
-
-      <div class="grid md:grid-cols-2 gap-6">
-        <!-- Contact Card -->
-        <div class="bg-white rounded-3xl shadow-xl p-6 card-hover relative">
-          <div class="heart-decoration relative">
-            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">📱</span> Kontak</h2>
-          </div>
-          <div class="space-y-4">
-            <div class="flex items-center gap-3 p-3 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
-              <span class="text-2xl">📧</span>
-              <div>
-                <p class="text-sm" style="color: #9d174d;">Gmail</p>
-                <p id="email-display" class="font-semibold" style="color: #be185d;">kaylalarasati900@gmail.com</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-3 p-3 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
-              <span class="text-2xl">📸</span>
-              <div>
-                <p class="text-sm" style="color: #9d174d;">Instagram</p>
-                <p id="telepon-display" class="font-semibold" style="color: #be185d;">@kkayllaa0_</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-3 p-3 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
-              <span class="text-2xl">📍</span>
-              <div>
-                <p class="text-sm" style="color: #9d174d;">Alamat</p>
-                <p id="lokasi-display" class="font-semibold" style="color: #be185d;">Kp. Kawungsari RT02/RW11 🏠</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills Card -->
-        <div class="bg-white rounded-3xl shadow-xl p-6 card-hover">
-          <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">💪</span> Keahlian</h2>
-          <div class="space-y-4">
-            <div>
-              <div class="flex justify-between mb-1"><span class="font-semibold" style="color: #9d174d;">Public Speaking</span> <span class="sparkle-animation">⭐⭐⭐⭐⭐</span></div>
-              <div class="h-4 rounded-full" style="background: #fce7f3;"><div class="skill-bar h-full" style="width: 95%;"></div></div>
-            </div>
-            <div>
-              <div class="flex justify-between mb-1"><span class="font-semibold" style="color: #9d174d;">Penulisan Konten</span> <span class="sparkle-animation">⭐⭐⭐⭐⭐</span></div>
-              <div class="h-4 rounded-full" style="background: #fce7f3;"><div class="skill-bar h-full" style="width: 90%;"></div></div>
-            </div>
-            <div>
-              <div class="flex justify-between mb-1"><span class="font-semibold" style="color: #9d174d;">Canva & Design</span> <span class="sparkle-animation">⭐⭐⭐⭐</span></div>
-              <div class="h-4 rounded-full" style="background: #fce7f3;"><div class="skill-bar h-full" style="width: 88%;"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Education Card -->
-        <div class="bg-white rounded-3xl shadow-xl p-6 card-hover md:col-span-2">
-          <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">🎓</span> Pendidikan</h2>
-          <div class="grid md:grid-cols-2 gap-3">
-            <div class="p-3 rounded-2xl" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
-              <h3 class="font-bold" style="color: #be185d;">🎓 S1 Ilmu Komunikasi</h3>
-              <p class="text-sm" style="color: #9d174d;">Universitas Padjadjaran • 2026-2030</p>
-            </div>
-            <div class="p-3 rounded-2xl" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
-              <h3 class="font-bold" style="color: #be185d;">🏫 SMA KP Baleendah</h3>
-              <p class="text-sm" style="color: #9d174d;">Lulus Tahun 2026</p>
-            </div>
-          </div>
-        </div>
+      <!-- Info -->
+      <div class="text-center md:text-left flex-1">
+       <h1 id="nama-display" class="text-4xl font-bold mb-2" style="color: #be185d;">Kayla Larasati</h1>
+       <p id="ttl-display" class="text-sm mb-3 flex items-center justify-center md:justify-start gap-1" style="color: #be185d;"><span>🎂</span> <span class="font-semibold">Bandung, 26 Agustus 2008</span></p>
+       <p id="tentang-display" class="leading-relaxed" style="color: #9d174d;">Saya adalah fresh graduate yang baru menyelesaikan pendidikan dan memiliki semangat tinggi untuk belajar serta berkembang di dunia kerja. Selama masa studi, saya terbiasa bekerja secara disiplin, bertanggung jawab, dan mampu bekerja secara mandiri maupun dalam tim. Saya memiliki motivasi kuat untuk mengembangkan keterampilan, terbuka terhadap tantangan baru, dan siap memberikan kontribusi terbaik bagi perusahaan 💖</p>
       </div>
-
-      <!-- Footer -->
-      <div class="text-center mt-8 p-4">
-        <p class="font-cursive text-xl" style="color: #ec4899;">✨ Terima kasih sudah mampir! ✨</p>
-        <p class="text-sm mt-2" style="color: #9d174d;">Made with 💖 and lots of pink~</p>
-      </div>
+     </div>
     </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+     <!-- Contact Card -->
+     <div class="bg-white rounded-3xl shadow-xl p-6 card-hover relative">
+      <div class="heart-decoration relative">
+       <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">📱</span> Kontak</h2>
+      </div>
+      <div class="space-y-4">
+       <div class="flex items-center gap-3 p-3 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);"><span class="text-2xl">📧</span>
+        <div>
+         <p class="text-sm" style="color: #9d174d;">Gmail</p>
+         <p id="email-display" class="font-semibold" style="color: #be185d;">kaylalarasati900@gmail.com</p>
+        </div>
+       </div>
+       <div class="flex items-center gap-3 p-3 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);"><span class="text-2xl">📸</span>
+        <div>
+         <p class="text-sm" style="color: #9d174d;">Instagram</p>
+         <p id="telepon-display" class="font-semibold" style="color: #be185d;">@kkayllaa0_</p>
+        </div>
+       </div>
+       <div class="flex items-center gap-3 p-3 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);"><span class="text-2xl">📍</span>
+        <div>
+         <p class="text-sm" style="color: #9d174d;">Alamat</p>
+         <p id="lokasi-display" class="font-semibold" style="color: #be185d;">Shuttle Podomoro 🏠</p>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <!-- Skills Card -->
+     <div class="bg-white rounded-3xl shadow-xl p-6 card-hover">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">💪</span> Keahlian</h2>
+      <div class="space-y-4">
+       <div>
+        <div class="flex justify-between mb-1"><span class="font-semibold" style="color: #9d174d;">Public Speaking</span> <span class="sparkle-animation">⭐⭐⭐⭐⭐</span></div>
+        <div class="h-4 rounded-full" style="background: #fce7f3;">
+         <div class="skill-bar h-full" style="width: 95%;"></div>
+        </div>
+       </div>
+       <div>
+        <div class="flex justify-between mb-1"><span class="font-semibold" style="color: #9d174d;">Penulisan Konten</span> <span class="sparkle-animation" style="animation-delay: 0.2s;">⭐⭐⭐⭐⭐</span></div>
+        <div class="h-4 rounded-full" style="background: #fce7f3;">
+         <div class="skill-bar h-full" style="width: 90%;"></div>
+        </div>
+       </div>
+       <div>
+        <div class="flex justify-between mb-1"><span class="font-semibold" style="color: #9d174d;">Media Sosial</span> <span class="sparkle-animation" style="animation-delay: 0.4s;">⭐⭐⭐⭐⭐</span></div>
+        <div class="h-4 rounded-full" style="background: #fce7f3;">
+         <div class="skill-bar h-full" style="width: 92%;"></div>
+        </div>
+       </div>
+       <div>
+        <div class="flex justify-between mb-1"><span class="font-semibold" style="color: #9d174d;">Canva &amp; Design</span> <span class="sparkle-animation" style="animation-delay: 0.6s;">⭐⭐⭐⭐</span></div>
+        <div class="h-4 rounded-full" style="background: #fce7f3;">
+         <div class="skill-bar h-full" style="width: 88%;"></div>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <!-- Experience Card -->
+     <div class="bg-white rounded-3xl shadow-xl p-6 card-hover md:col-span-2">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">💼</span> Pengalaman Organisasi</h2>
+      <div class="space-y-4">
+       <div class="relative pl-8 pb-4 border-l-4" style="border-color: #f472b6;">
+        <div class="absolute -left-3 top-0 w-6 h-6 rounded-full flex items-center justify-center" style="background: #f472b6;"><span class="text-white text-sm">🌟</span></div>
+        <div class="p-4 rounded-2xl" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+         <ul class="space-y-1" style="color: #9d174d;">
+          <li>• Berpartisipasi aktif dalam perencanaan dan pelaksanaan kegiatan organisasi</li>
+          <li>• Bekerja sama dengan tim untuk mencapai tujuan bersama</li>
+          <li>• Melatih kemampuan komunikasi, kepemimpinan, dan manajemen waktu</li>
+          <li>• Bertanggung jawab menjalankan tugas sesuai peran yang diberikan</li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <!-- Prestasi Card -->
+     <div class="bg-white rounded-3xl shadow-xl p-6 card-hover md:col-span-2">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">🏆</span> Prestasi</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+       <div class="p-4 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+        <div class="flex items-start gap-3"><span class="text-2xl">📖</span>
+         <div>
+          <h3 class="font-bold mb-1" style="color: #be185d;">Lomba Tahfidz Juz 30</h3>
+          <p class="text-sm" style="color: #9d174d;">2012</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-4 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+        <div class="flex items-start gap-3"><span class="text-2xl">📖</span>
+         <div>
+          <h3 class="font-bold mb-1" style="color: #be185d;">Lomba Tahfidz Juz 29</h3>
+          <p class="text-sm" style="color: #9d174d;">2019</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-4 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+        <div class="flex items-start gap-3"><span class="text-2xl">🎺</span>
+         <div>
+          <h3 class="font-bold mb-1" style="color: #be185d;">Lomba Tim Marching Band</h3>
+          <p class="text-sm" style="color: #9d174d;">2022</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-4 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+        <div class="flex items-start gap-3"><span class="text-2xl">🎺</span>
+         <div>
+          <h3 class="font-bold mb-1" style="color: #be185d;">Lomba IDCA Tim Marching Band</h3>
+          <p class="text-sm" style="color: #9d174d;">2024</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <!-- Education Card -->
+     <div class="bg-white rounded-3xl shadow-xl p-6 card-hover">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">🎓</span> Pendidikan</h2>
+      <div class="space-y-3">
+       <div class="p-3 rounded-2xl" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+        <h3 class="font-bold" style="color: #be185d;">🎓 S1 Ilmu Komunikasi</h3>
+        <p class="text-sm" style="color: #9d174d;">Universitas Padjadjaran • 2026-2030</p>
+       </div>
+       <div class="p-3 rounded-2xl" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+        <h3 class="font-bold" style="color: #be185d;">🏫 SMA KP Baleendah</h3>
+        <p class="text-sm" style="color: #9d174d;">Lulus Tahun 2026</p>
+       </div>
+       <div class="p-3 rounded-2xl" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+        <h3 class="font-bold" style="color: #be185d;">📚 MTsN 1 Bandung</h3>
+        <p class="text-sm" style="color: #9d174d;">Lulus Tahun 2023</p>
+       </div>
+       <div class="p-3 rounded-2xl" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+        <h3 class="font-bold" style="color: #be185d;">✏️ SD Cangkring 02</h3>
+        <p class="text-sm" style="color: #9d174d;">Lulus Tahun 2019</p>
+       </div>
+      </div>
+     </div>
+
+     <!-- Hobbies Card -->
+     <div class="bg-white rounded-3xl shadow-xl p-6 card-hover">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">🎨</span> Hobi &amp; Minat</h2>
+      <div class="flex flex-wrap gap-3">
+       <span class="px-4 py-2 rounded-full text-sm font-semibold transition-all hover:scale-110 cursor-default" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3); color: #be185d;"> 📸 Fotografi </span> 
+       <span class="px-4 py-2 rounded-full text-sm font-semibold transition-all hover:scale-110 cursor-default" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3); color: #be185d;"> 🎥 Videografi </span> 
+       <span class="px-4 py-2 rounded-full text-sm font-semibold transition-all hover:scale-110 cursor-default" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3); color: #be185d;"> ✍️ Menulis </span> 
+       <span class="px-4 py-2 rounded-full text-sm font-semibold transition-all hover:scale-110 cursor-default" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3); color: #be185d;"> 📱 Social Media </span> 
+       <span class="px-4 py-2 rounded-full text-sm font-semibold transition-all hover:scale-110 cursor-default" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3); color: #be185d;"> 🎨 Canva Design </span> 
+       <span class="px-4 py-2 rounded-full text-sm font-semibold transition-all hover:scale-110 cursor-default" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3); color: #be185d;"> 📊 Analisis Data </span>
+      </div>
+     </div>
+
+     <!-- Language Card -->
+     <div class="bg-white rounded-3xl shadow-xl p-6 card-hover md:col-span-2">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">🌍</span> Bahasa</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+       <div class="p-4 rounded-2xl" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+        <div class="flex items-center justify-between mb-2">
+         <div class="flex items-center gap-3"><span class="text-3xl">🇮🇩</span>
+          <h3 class="font-bold text-lg" style="color: #be185d;">Bahasa Indonesia</h3>
+         </div><span class="text-2xl sparkle-animation">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p class="text-sm font-semibold" style="color: #ec4899;">Fasih - Native Speaker</p>
+        <div class="mt-2 h-3 rounded-full" style="background: #fce7f3;">
+         <div class="skill-bar h-full rounded-full" style="width: 100%;"></div>
+        </div>
+       </div>
+       <div class="p-4 rounded-2xl" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
+        <div class="flex items-center justify-between mb-2">
+         <div class="flex items-center gap-3"><span class="text-3xl">🇬🇧</span>
+          <h3 class="font-bold text-lg" style="color: #be185d;">Bahasa Inggris</h3>
+         </div><span class="text-2xl sparkle-animation" style="animation-delay: 0.3s;">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p class="text-sm font-semibold" style="color: #ec4899;">Fasih - Fluent</p>
+        <div class="mt-2 h-3 rounded-full" style="background: #fce7f3;">
+         <div class="skill-bar h-full rounded-full" style="width: 95%;"></div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center mt-8 p-4">
+     <p class="font-cursive text-xl" style="color: #ec4899;">✨ Terima kasih sudah mampir! ✨</p>
+     <p class="text-sm mt-2" style="color: #9d174d;">Made with 💖 and lots of pink~</p>
+    </div>
+   </div>
   </div>
+
+  <script>
+    const defaultConfig = {
+      nama: 'Kayla Larasati',
+      ttl: 'Bandung, 26 Agustus 2008',
+      tentang: 'Saya adalah fresh graduate yang baru menyelesaikan pendidikan dan memiliki semangat tinggi untuk belajar serta berkembang di dunia kerja. Selama masa studi, saya terbiasa bekerja secara disiplin, bertanggung jawab, dan mampu bekerja secara mandiri maupun dalam tim. Saya memiliki motivasi kuat untuk mengembangkan keterampilan, terbuka terhadap tantangan baru, dan siap memberikan kontribusi terbaik bagi perusahaan 💖',
+      email: 'kaylalarasati900@gmail.com',
+      telepon: '@kkayllaa0_',
+      lokasi: 'Shuttle Podomoro 🏠'
+    };
+    
+    async function onConfigChange(config) {
+      document.getElementById('nama-display').textContent = config.nama || defaultConfig.nama;
+      document.getElementById('ttl-display').innerHTML = '<span>🎂</span><span class="font-semibold">' + (config.ttl || defaultConfig.ttl) + '</span>';
+      document.getElementById('tentang-display').textContent = config.tentang || defaultConfig.tentang;
+      document.getElementById('email-display').textContent = config.email || defaultConfig.email;
+      document.getElementById('telepon-display').textContent = config.telepon || defaultConfig.telepon;
+      document.getElementById('lokasi-display').textContent = config.lokasi || defaultConfig.lokasi;
+    }
+    
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: () => ({ recolorables: [], borderables: [] }),
+        mapToEditPanelValues: (config) => new Map([
+          ['nama', config.nama || defaultConfig.nama],
+          ['tentang', config.tentang || defaultConfig.tentang],
+          ['email', config.email || defaultConfig.email],
+          ['telepon', config.telepon || defaultConfig.telepon],
+          ['lokasi', config.lokasi || defaultConfig.lokasi]
+        ])
+      });
+    }
+  </script>
  </body>
 </html>
