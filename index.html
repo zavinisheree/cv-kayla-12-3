@@ -150,6 +150,12 @@
          <p id="email-display" class="font-semibold" style="color: #be185d;">kaylalarasati900@gmail.com</p>
         </div>
        </div>
+       <div class="flex items-center gap-3 p-3 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);"><span class="text-2xl">📞</span>
+        <div>
+         <p class="text-sm" style="color: #9d174d;">WhatsApp / Telp</p>
+         <p id="wa-display" class="font-semibold" style="color: #be185d;">0859110248374</p>
+        </div>
+       </div>
        <div class="flex items-center gap-3 p-3 rounded-2xl transition-all hover:scale-105" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);"><span class="text-2xl">📸</span>
         <div>
          <p class="text-sm" style="color: #9d174d;">Instagram</p>
@@ -257,7 +263,6 @@
      <div class="bg-white rounded-3xl shadow-xl p-6 card-hover">
       <h2 class="text-2xl font-bold mb-4 flex items-center gap-2" style="color: #be185d;"><span class="text-3xl">🎓</span> Pendidikan</h2>
       <div class="space-y-3">
-       <!-- BAGIAN S1 SUDAH DIHAPUS -->
        <div class="p-3 rounded-2xl" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
         <h3 class="font-bold" style="color: #be185d;">🏫 SMA KP Baleendah</h3>
         <p class="text-sm" style="color: #9d174d;">Lulus Tahun 2026</p>
@@ -330,6 +335,7 @@
       ttl: 'Bandung, 26 Agustus 2008',
       tentang: 'Saya adalah fresh graduate yang baru menyelesaikan pendidikan dan memiliki semangat tinggi untuk belajar serta berkembang di dunia kerja. Selama masa studi, saya terbiasa bekerja secara disiplin, bertanggung jawab, dan mampu bekerja secara mandiri maupun dalam tim. Saya memiliki motivasi kuat untuk mengembangkan keterampilan, terbuka terhadap tantangan baru, dan siap memberikan kontribusi terbaik bagi perusahaan 💖',
       email: 'kaylalarasati900@gmail.com',
+      wa: '0859110248374',
       telepon: '@kkayllaa0_',
       lokasi: 'Shuttle Podomoro 🏠'
     };
@@ -339,6 +345,7 @@
       document.getElementById('ttl-display').innerHTML = '<span>🎂</span><span class="font-semibold">' + (config.ttl || defaultConfig.ttl) + '</span>';
       document.getElementById('tentang-display').textContent = config.tentang || defaultConfig.tentang;
       document.getElementById('email-display').textContent = config.email || defaultConfig.email;
+      document.getElementById('wa-display').textContent = config.wa || defaultConfig.wa;
       document.getElementById('telepon-display').textContent = config.telepon || defaultConfig.telepon;
       document.getElementById('lokasi-display').textContent = config.lokasi || defaultConfig.lokasi;
     }
@@ -352,6 +359,7 @@
           ['nama', config.nama || defaultConfig.nama],
           ['tentang', config.tentang || defaultConfig.tentang],
           ['email', config.email || defaultConfig.email],
+          ['wa', config.wa || defaultConfig.wa],
           ['telepon', config.telepon || defaultConfig.telepon],
           ['lokasi', config.lokasi || defaultConfig.lokasi]
         ])
